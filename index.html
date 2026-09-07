@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Mania Digital | Gardone Val Trompia (BS)</title>
+  <meta name="description" content="Una piattaforma digitale elegante e interattiva per la gestione delle prenotazioni e dell'identità culinaria della pizzeria, a Gardone Val Trompia (BS).">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Pizza Mania Digital | Gardone Val Trompia">
+  <meta property="og:description" content="Impasto morbido ed elastico, ingredienti scelti e un’accoglienza di famiglia.">
+  <meta property="og:image" content="assets/images/logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- FLOATING NAVBAR -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <!-- Brand Logo -->
+      <a href="index.html" class="nav-brand">
+        <img src="assets/images/logo.png" alt="Pizza Mania" class="nav-logo-img">
+        <span class="brand-text">PIZZA <span class="brand-text-accent">MANIA</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <div class="nav-links">
+        <a href="#esperienza" class="nav-link" data-i18n="nav_experience">La nostra pizza</a>
+        <a href="#menu" class="nav-link" data-i18n="nav_menu">Menu</a>
+        <a href="#galleria" class="nav-link" data-i18n="nav_gallery">Gallery</a>
+        <a href="#visita" class="nav-link" data-i18n="nav_visit">Visita</a>
+        <a href="tel:+39030833180" class="nav-phone-link" aria-label="Call">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Action Buttons (Language, Theme, CTA) -->
+      <div class="nav-actions">
+        <button id="lang-toggle-btn" class="btn-lang" aria-label="Change language">IT</button>
+        <button id="theme-toggle-btn" class="btn-icon-round" aria-label="Change color theme">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+        </button>
+        <a href="prenota.html" class="btn-nav-cta" data-i18n="nav_book">Prenota</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <video class="hero-video" src="assets/video/hero.mp4" autoplay muted loop playsinline></video>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-tag" data-i18n="hero_tag">Gardone Val Trompia · Pizza da asporto</p>
+      <h1 class="hero-title" data-i18n-html="hero_title">L'ARTE DELLA<br>PIZZA.</h1>
+      <p class="hero-description" data-i18n="hero_desc">Impasto morbido ed elastico, ingredienti scelti e un’accoglienza di famiglia.</p>
+      <div class="hero-cta-group">
+        <a href="prenota.html" class="btn-hero-primary" data-i18n="hero_book">Prenota un tavolo</a>
+        <a href="tel:+39030833180" class="btn-hero-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span data-i18n="hero_call">Chiama ora</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDENTITÀ / ESPERIENZA SECTION -->
+  <section id="esperienza" class="section">
+    <div class="container">
+      <p class="section-label" data-i18n="identity_tag">La nostra identità</p>
+      <h2 class="section-title" data-i18n="identity_title">Il gusto vero, senza pose.</h2>
+
+      <div class="identity-grid">
+        <!-- Card 1: Impasti speciali -->
+        <article class="identity-card">
+          <svg class="identity-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <h3 class="identity-card-title" data-i18n="card_dough_title">Impasti speciali</h3>
+          <p class="identity-card-desc" data-i18n="card_dough_desc">Alternative stagionali e una base morbida, elastica e ben lavorata.</p>
+        </article>
+
+        <!-- Card 2: Fatta a vista -->
+        <article class="identity-card">
+          <svg class="identity-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+          <h3 class="identity-card-title" data-i18n="card_open_title">Fatta a vista</h3>
+          <p class="identity-card-desc" data-i18n="card_open_desc">Una pizza semplice e autentica, preparata davanti ai tuoi occhi.</p>
+        </article>
+
+        <!-- Card 3: Gestione familiare -->
+        <article class="identity-card">
+          <svg class="identity-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+          <h3 class="identity-card-title" data-i18n="card_family_title">Gestione familiare</h3>
+          <p class="identity-card-desc" data-i18n="card_family_desc">Cortesia, puntualità e attenzione che si sentono dal primo morso.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section id="menu" class="section">
+    <div class="container">
+      <div class="menu-grid">
+        <!-- Left Column: Info & Call Action -->
+        <div>
+          <p class="section-label" data-i18n="menu_tag">Menu</p>
+          <h2 class="section-title" data-i18n="menu_title">Una pizza per ogni mania.</h2>
+          <p class="menu-info-text" data-i18n="menu_desc">La selezione segue la stagione e la disponibilità degli ingredienti. Chiamaci per conoscere il menu aggiornato e ordinare.</p>
+          <a href="tel:+39030833180" class="btn-menu-call">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span data-i18n="menu_cta">Scopri il menu di oggi</span>
+          </a>
+        </div>
+
+        <!-- Right Column: Menu Categories List -->
+        <div class="menu-list-wrapper">
+          <div class="menu-item-row">
+            <span><small class="menu-num">01</small><span data-i18n="menu_cat_1">Pizze rosse</span></span>
+            <svg class="menu-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+            </svg>
+          </div>
+          <div class="menu-item-row">
+            <span><small class="menu-num">02</small><span data-i18n="menu_cat_2">Pizze bianche</span></span>
+            <svg class="menu-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+            </svg>
+          </div>
+          <div class="menu-item-row">
+            <span><small class="menu-num">03</small><span data-i18n="menu_cat_3">Specialità stagionali</span></span>
+            <svg class="menu-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+            </svg>
+          </div>
+          <div class="menu-item-row">
+            <span><small class="menu-num">04</small><span data-i18n="menu_cat_4">Impasti speciali</span></span>
+            <svg class="menu-arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="galleria" class="section gallery-section">
+    <div class="container">
+      <div>
+        <p class="section-label gallery-label" data-i18n="gallery_tag">Gallery</p>
+        <h2 class="section-title" data-i18n="gallery_title">Prima si guarda.</h2>
+      </div>
+
+      <!-- 16 Pizza Photos Grid -->
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_1.jpg" alt="Pizza Mania 1" class="gallery-img" data-gallery-idx="1" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_2.jpg" alt="Pizza Mania 2" class="gallery-img" data-gallery-idx="2" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_3.jpg" alt="Pizza Mania 3" class="gallery-img" data-gallery-idx="3" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_4.jpg" alt="Pizza Mania 4" class="gallery-img" data-gallery-idx="4" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_5.jpg" alt="Pizza Mania 5" class="gallery-img" data-gallery-idx="5" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_6.jpg" alt="Pizza Mania 6" class="gallery-img" data-gallery-idx="6" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_7.jpg" alt="Pizza Mania 7" class="gallery-img" data-gallery-idx="7" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_8.jpg" alt="Pizza Mania 8" class="gallery-img" data-gallery-idx="8" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_9.jpg" alt="Pizza Mania 9" class="gallery-img" data-gallery-idx="9" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_10.jpg" alt="Pizza Mania 10" class="gallery-img" data-gallery-idx="10" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_11.jpg" alt="Pizza Mania 11" class="gallery-img" data-gallery-idx="11" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_12.jpg" alt="Pizza Mania 12" class="gallery-img" data-gallery-idx="12" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_13.jpg" alt="Pizza Mania 13" class="gallery-img" data-gallery-idx="13" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_14.jpg" alt="Pizza Mania 14" class="gallery-img" data-gallery-idx="14" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_15.jpg" alt="Pizza Mania 15" class="gallery-img" data-gallery-idx="15" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/images/gallery/pizza_16.jpg" alt="Pizza Mania 16" class="gallery-img" data-gallery-idx="16" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOGLE REVIEWS SECTION -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label" data-i18n="reviews_tag">Google reviews</p>
+      <h2 class="section-title" data-i18n="reviews_title">Parola a chi ci sceglie.</h2>
+
+      <div class="reviews-grid">
+        <!-- Review 1: Nicola Pelizzari -->
+        <blockquote class="review-card">
+          <div class="stars-group">
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="review-quote" data-i18n="review_1_text">“Pizza eccellente, gestione familiare molto affiatata e davvero azzeccata. Ospitalità al top! Sono rimasto davvero soddisfatto! Consigliatissima!”</p>
+          <footer class="review-author">Nicola Pelizzari</footer>
+        </blockquote>
+
+        <!-- Review 2: Andrea Gardoncini -->
+        <blockquote class="review-card">
+          <div class="stars-group">
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="review-quote" data-i18n="review_2_text">“Pizza eccellente, impasto morbido ed elastico, condimenti buoni ed equilibrati e ingredienti di prima qualità.”</p>
+          <footer class="review-author">Andrea Gardoncini</footer>
+        </blockquote>
+
+        <!-- Review 3: Gianpietro Bregoli -->
+        <blockquote class="review-card">
+          <div class="stars-group">
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="review-quote" data-i18n="review_3_text">“Pizza eccellente, ingredienti di prima qualità e sempre super cortesi. Giusto sotto casa mia è il migliore 🔝”</p>
+          <footer class="review-author">Gianpietro Bregoli</footer>
+        </blockquote>
+
+        <!-- Review 4: Lara -->
+        <blockquote class="review-card">
+          <div class="stars-group">
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="review-quote" data-i18n="review_4_text">“Pizza buonissima e uso il servizio di consegna a domicilio, arriva sempre bella calda 👌”</p>
+          <footer class="review-author">Lara</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIENI A TROVARCI / VISITA SECTION -->
+  <section id="visita" class="section">
+    <div class="container">
+      <div class="visit-banner">
+        <!-- Left: Address & Directions -->
+        <div class="visit-info-col">
+          <p class="visit-tag" data-i18n="visit_tag">Vieni a trovarci</p>
+          <h2 class="visit-street" data-i18n="visit_street">Via Roma 14</h2>
+          <p class="visit-city" data-i18n="visit_city">Gardone Val Trompia (BS)</p>
+          <div class="visit-actions-group">
+            <a href="https://www.google.com/maps/place/Pizzamania+di+Pellicardi+Lorenzo/@45.6805309,10.1837503,17.91z/data=!4m15!1m8!3m7!1s0x47817c09a7e168e3:0xd55b6e5aed236288!2sPizzamania+di+Pellicardi+Lorenzo!8m2!3d45.6805951!4d10.1856939!16s%2Fg%2F1vxfz06m" target="_blank" rel="noreferrer" class="btn-visit-directions">
+              <span data-i18n="visit_directions">Indicazioni</span>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17 17 7"/><path d="M7 7h10v10"/>
+              </svg>
+            </a>
+            <a href="tel:+39030833180" class="btn-visit-phone">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>030 833180</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Opening Hours Table -->
+        <div class="visit-hours-col">
+          <h3 class="hours-title" data-i18n="visit_hours_title">Orari di apertura</h3>
+          <div class="hours-list">
+            <div class="hours-row">
+              <span data-i18n="day_monday">Lunedì</span>
+              <span class="hours-time" data-i18n="status_closed">Chiuso</span>
+            </div>
+            <div class="hours-row">
+              <span data-i18n="day_tuesday">Martedì</span>
+              <span class="hours-time">10:30–13:30 · 16:30–21:30</span>
+            </div>
+            <div class="hours-row">
+              <span data-i18n="day_wednesday">Mercoledì</span>
+              <span class="hours-time">10:30–13:30 · 16:30–21:30</span>
+            </div>
+            <div class="hours-row">
+              <span data-i18n="day_thursday">Giovedì</span>
+              <span class="hours-time">10:30–13:30 · 16:30–21:30</span>
+            </div>
+            <div class="hours-row">
+              <span data-i18n="day_friday">Venerdì</span>
+              <span class="hours-time">10:30–13:30 · 16:30–21:30</span>
+            </div>
+            <div class="hours-row">
+              <span data-i18n="day_saturday">Sabato</span>
+              <span class="hours-time">17:00–21:30</span>
+            </div>
+            <div class="hours-row">
+              <span data-i18n="day_sunday">Domenica</span>
+              <span class="hours-time">17:00–21:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Col 1: Brand & Address -->
+      <div>
+        <div class="footer-brand">
+          <img src="assets/images/logo.png" alt="Pizza Mania" class="footer-logo-img">
+          <p class="footer-title">PIZZA MANIA</p>
+        </div>
+        <p class="footer-address" data-i18n="footer_address">Via Roma 14, Gardone Val Trompia (BS)</p>
+      </div>
+
+      <!-- Col 2: Contact & Social Links -->
+      <div class="footer-links-col">
+        <a href="tel:+39030833180" class="footer-link-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>030 833180</span>
+        </a>
+        <a href="https://www.google.com/maps/place/Pizzamania+di+Pellicardi+Lorenzo/@45.6805309,10.1837503,17.91z/data=!4m15!1m8!3m7!1s0x47817c09a7e168e3:0xd55b6e5aed236288!2sPizzamania+di+Pellicardi+Lorenzo!8m2!3d45.6805951!4d10.1856939!16s%2Fg%2F1vxfz06m" target="_blank" rel="noreferrer" class="footer-link-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span data-i18n="footer_directions">Indicazioni</span>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100063697536486&locale=it_IT" target="_blank" rel="noreferrer" class="footer-link-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+          <span>Facebook</span>
+        </a>
+      </div>
+
+      <!-- Col 3: Book CTA & Admin Link -->
+      <div>
+        <a href="prenota.html" class="btn-footer-cta" data-i18n="footer_book">Prenota un tavolo</a>
+        <a href="admin.html" class="footer-admin-link" data-i18n="footer_admin">Area amministrativa</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
